@@ -17,14 +17,14 @@
                 align-items: center;
                 right: 0;
                 top: 8vh;
-                height: 52vh;
+                height: 35vh;
                 transition: all 0.3s ease;
                 transform: translateY(-1000px);
                 
             }
             .link-items{
                 @include media(sm){
-                    padding: 25px 0;
+                    padding: 12px 0;
                     width: 100%;
                     transition: 0.3s ease;
                     text-align: center;
@@ -68,6 +68,7 @@
     margin-left: 15px;
     float: left;
     transition: opacity 0.3s;
+    margin-left: auto;
     &:hover{
         cursor: pointer;
         opacity: 0.5s;
@@ -89,10 +90,10 @@
             opacity: 0;
         }
         &:nth-child(1){
-            transform: rotate(45deg) translateY(9px);
+            transform: rotate(45deg) translateY(7px);
         }
         &:nth-child(3){
-            transform: rotate(-45deg) translateY(-7px);
+            transform: rotate(-45deg) translateY(-8px);
         }
     }
 }
@@ -101,7 +102,7 @@
 }
 .navigation .wrapper  .nav-items.open{
     transform: translateY(0);
-    top: 65px;
+    top: 100px;
     width: 88%;
     background: $color-White;
     z-index: 9999;
@@ -115,4 +116,31 @@
     .hamburger {
         display: none;
     }
+}
+
+@include media(sm) {
+    .overlay.opacity {
+        opacity: 1;
+        visibility: visible;
+        
+    z-index: 99;
+    }
+}
+
+.overlay{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    background: rgba($color: #000000, $alpha:0.2);
+    opacity: 0;
+    visibility: hidden;
+}
+.nav-open{
+    position: fixed;
+    width: 100%;
+}
+.opacity-1{
+    opacity: 0;
 }

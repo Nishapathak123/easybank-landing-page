@@ -1,0 +1,29 @@
+img{
+    max-width: 100%;
+    display: block;
+    // vertical-align: middle;
+}
+svg{
+    vertical-align: middle;
+}
+.btn{
+    display: inline-block;
+    background: linear-gradient(to right, $color-Lime-Green, $color-Bright-Cyan);
+    font-size: 14px;
+    padding: 10px 23px;
+    border-radius: 25px;
+    color: $color-White;
+    margin: 0 auto;
+    cursor: pointer;
+    
+    &:hover{
+        background: linear-gradient(to right, $color-light-lime-green, $color-light-bright-Cyan); 
+    }
+}
+.button{
+    display: block;
+    @include media(sm){
+        display: none;
+    }
+    
+}

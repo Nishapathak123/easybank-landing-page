@@ -1,0 +1,88 @@
+footer{
+    .wrapper{
+        .footer-items{
+            li{
+                padding-bottom: 10px;
+                @include media(sm){
+                    padding-bottom: 17px;
+                 }
+            a{
+                color: $color-Light-Grayish-Blue;
+                font-weight: 300;
+                font-size: 13px;
+            
+            }
+        }
+        }
+    }
+}
+footer{
+    background: $color-Dark-Blue;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        max-width: 1230px;
+        @include media(sm){
+           flex-direction: column; 
+           text-align: center;
+        }
+        .footer-items{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 90px;
+            @include media(sm){
+                grid-template-columns: repeat(1,1fr);
+                text-align: center;
+                grid-gap: 5px;
+             }
+             
+            .foot-items{
+                a{
+                    svg{
+                    fill: $color-Very-Light-Gray
+                }
+            }
+            .icons{
+                display: flex;
+                padding-top: 45px;
+                @include media(sm){
+                    justify-content: center;
+                 }
+                a{
+                    margin-right: 10px;
+                    
+                }
+            }
+        }
+        .info{
+            padding-left: 45px;
+            @include media(sm){
+                padding-left: 0px;
+                padding-top: 20px;
+             }
+        }
+    }
+    .request{
+     display: grid;
+    .bright{
+        @include media(sm){
+            padding-top: 20px;
+            padding-bottom: 25px;
+            text-align: center;
+            margin: auto;
+         }
+        
+        .btn-light{
+            float: right;
+        }
+    }
+      .texter{
+          .text3{
+          color: $color-Grayish-Blue;
+        }       
+      }  
+    }
+}
+}
